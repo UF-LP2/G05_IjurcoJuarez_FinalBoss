@@ -10,6 +10,9 @@ class Ship:
         if peso_real > 20:
             return peso_real
             # y si pongo un un print diciendo q se puede saquear?
+        elif peso_real < 0:
+            raise Exception
+        # todo diferenciar excepciones
         else:
             raise Exception
 # todo hacer el metodo pa las hijas
