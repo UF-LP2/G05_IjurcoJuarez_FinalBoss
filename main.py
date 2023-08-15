@@ -1,5 +1,6 @@
 import csv
-from cShip import Ship # para que me deje crear un barco del tipo ship
+from cShip import Ship
+# para que me deje crear un barco del tipo ship
 from cCargo import Cargo
 from cCruise import Cruise
 
@@ -22,8 +23,7 @@ def main():
         cargo = Cargo(row[0], row[1],  row[2], row[3])
         listaships.append(cargo)
 
-# todo
-# generar caso para cuando no es ninguno y tirar un error
+# todo generar caso para cuando no es ninguno y tirar un error
 
 
 
