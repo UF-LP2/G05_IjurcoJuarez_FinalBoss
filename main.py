@@ -24,7 +24,7 @@ def main():
         listaships.append(cargo)
 
 # todo generar caso para cuando no es ninguno y tirar un error
-
+# todo mandar el metodo del barco para ver si hay q saquearlo
 
 
 
