@@ -1,19 +1,21 @@
 import csv
-from cShip import Ship
+from src.Barcos import cShip
+from src.Barcos import Cargo
+from src.Barcos import Cruise
 # para que me deje crear un barco del tipo ship
-from cCargo import Cargo
-from cCruise import Cruise
+
 
 def main():
     listaships = []
-    with open("ships.csv") as barcos:
+    with open("ships.csv",'r') as barcos:
         lector = csv.reader(barcos)
         header = next(lector)
 
-    for row in lector:
+
+      for row in lector:
         if row[3] == " " and row[2] == " ":
             # me fijo q no haya nada en el ultimo ni anteultimo porque tiene solo 2 carac
-            barco = Ship(row[0], row[1])
+            barco = cShip(row[0], row[1])
             listaships.append(barco)
         elif row[3] == " " and row[2] != " ":
             # me fijo que el ultimo este vacio pero el anteultimo no tiene 3 carac
