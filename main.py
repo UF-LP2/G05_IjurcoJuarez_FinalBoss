@@ -9,6 +9,7 @@ def main():
     listaships = []
     with open("ships.csv") as barcos:
         lector = csv.reader(barcos)
+        header = next(lector)
     for row in lector:
       if row[3] == " " and row[2] == " ":
         # me fijo q no haya nada en el ultimo ni anteultimo porque tiene solo 2 carac
