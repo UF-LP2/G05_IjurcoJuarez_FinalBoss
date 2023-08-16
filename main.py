@@ -7,7 +7,7 @@ from src.Barcos import Cruise
 
 def main():
     listaships = []
-    with open("ships.csv",'r') as barcos:
+    with open("ships.csv", 'r') as barcos:
         lector = csv.reader(barcos)
         header = next(lector)
 
