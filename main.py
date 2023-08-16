@@ -1,8 +1,8 @@
 import csv
-from cShip import Ship
+from src.cShip import Ship
 # para que me deje crear un barco del tipo ship
-from cCargo import Cargo
-from cCruise import Cruise
+from src.cCargo import Cargo
+from src.cCruise import Cruise
 
 
 def main():
